@@ -484,6 +484,7 @@ footer{
     .filtercontainer{
         flex-direction: column;
         align-items: flex-start;
+        margin: 0;
     }
     
     .filtercontenant button{
@@ -508,6 +509,10 @@ footer{
     .hebergements {
         width: 100%;
        
+    }
+
+    .hcard{
+        width: 30%;
     }
     
     .populaires {
@@ -542,28 +547,24 @@ footer{
 
     
     header {
-        
         flex-direction: column;
-        align-items: center;
-        padding: 1em;
+        align-items: center;        
     }
-    
-    .logo {
-        margin: 0 auto; 
-        margin-bottom: 0.625em; 
-    }
+
 
     nav {
         width: 100%;
         align-self: stretch;
+        padding-left: 0;
     }
 
     .menu{
-
+        padding: 0;
     }
 
     .menu li {
         width: 100%; 
+        border-bottom: 2px solid #F2F2F2;
         
     }
 
@@ -577,9 +578,6 @@ footer{
         width: 100%; 
     }
     
-    .menu li:first-child {
-        margin-left: -2em;
-    }
 
     .link:active,
     .link:hover {
@@ -646,7 +644,7 @@ footer{
     .filtercontenant button{
         display: flex;
         height: 3.125em;
-        padding: 0.25em 1.1875em;
+        padding: 0.25em 1.875em;
         align-items: center;
         gap: 0.625em;
         font-size: 0.8175em;
@@ -655,7 +653,7 @@ footer{
 
 
     .info{
-        padding-top: 9.70em;
+        padding-top: 4.70em;
          }
 
     .hebergements-and-populaires{
