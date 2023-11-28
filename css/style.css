@@ -644,7 +644,7 @@ footer{
     .filtercontenant button{
         display: flex;
         height: 3.125em;
-        padding: 0.25em 1.875em;
+        padding: 0.25em 1.1875em;
         align-items: center;
         gap: 0.625em;
         font-size: 0.8175em;
