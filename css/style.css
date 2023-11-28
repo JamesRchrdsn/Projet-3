@@ -189,7 +189,7 @@ button:hover{
 
 /****** Filters ***********/
 
-.filtercontainer{
+.filterbar{
     display: flex;
     height: 3.125em;
     align-items: center;
@@ -481,7 +481,7 @@ footer{
         margin-top: -1em;      
     }
 
-    .filtercontainer{
+    .filterbar{
         flex-direction: column;
         align-items: flex-start;
         margin: 0;
@@ -636,7 +636,7 @@ footer{
         flex-wrap: wrap;       
     }
 
-    .filtercontainer{
+    .filterbar{
         flex-direction: column;
         align-items: flex-start;
     }
