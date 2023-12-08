@@ -64,7 +64,7 @@ a {
 /****** header ***********/
 
 .main-container{
-    margin: 0;
+    margin: 0 3.12em;
     padding: 0;
 }
 
@@ -278,13 +278,14 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1.88em;
-    justify-content: center;
+    gap: 1.88em;    
  }
 
-.hcard{
-    width: 16.99em;
-       }
+ .hcard{
+    width: 29%;
+    white-space: nowrap;
+    flex: 1 0 auto;
+}
     
 
 .hebergements-cards img{
@@ -295,7 +296,7 @@ button:hover{
 }
 
 .hebergements-cards .card-content{
-    padding: 0 0.938em 0 0.938em;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -306,10 +307,12 @@ button:hover{
 .hebergements-cards .card-title{
     margin-top: 0.625em;
     margin-bottom: 0.25em;
+    font-size: clamp(0.9em, 1vw, 2em);
 }
 
 .hebergements-cards .card-subtitle{
     margin: 0;
+    font-size: clamp(0.9em, 1vw, 2em);
 }
 
 .hebergements-cards .card-rating{
@@ -417,7 +420,7 @@ button:hover{
 footer{
     background-color: #F2F2F2;
     width: 100%;
-    height: 13em;
+    height: 12%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
@@ -451,17 +454,14 @@ footer{
 @media (max-width: 1024px) {
 
     .logo{
-        padding: 1.88em 3.12em;
+        padding: 1.88em 0;
     }
 
     nav{
         padding: 0 6.24em;
     }
 
-    main,
-    footer{
-        padding: 0 3.12em;
-    }
+
 
     .link:active{
         color: var(--main-color) ;
@@ -494,7 +494,7 @@ footer{
         align-items: center;
         gap: 0.625em;
         font-size: 0.8175em;
-        flex: 1 0 0
+        flex: 1 0 auto
     }
     
     .info{
@@ -513,6 +513,7 @@ footer{
 
     .hcard{
         width: 30%;
+        white-space: nowrap;
     }
     
     .populaires {
@@ -545,7 +546,11 @@ footer{
 /* Small devices (phones, less than 768px) */
 @media (min-width: 320px) and (max-width: 767.98px) {
 
+    .main-container{
+        margin: 0;
+    }
     
+
     header {
         flex-direction: column;
         align-items: center;        
@@ -586,6 +591,11 @@ footer{
         border-bottom: 0.125em solid var(--main-color);
     }
 
+    main{
+        margin: 3.12em;
+    }
+
+
     .headline {
         padding: 0em 0em 2.19em 0em;
     }
@@ -599,12 +609,10 @@ footer{
     line-height:1 ;
    }
 
-    .searchbar{
-        justify-content: center;
-    }
+
 
     .search{
-        padding: 0.875em 4.063em 0.875em 1.5em;
+        
         width: 80%;
     }
 
@@ -642,13 +650,14 @@ footer{
     }
     
     .filtercontenant button{
+        width: 40%;
         display: flex;
         height: 3.125em;
         padding: 0.25em 1.1875em;
         align-items: center;
         gap: 0.625em;
-        font-size: 0.8175em;
-        flex: 1 0 0
+        font-size: clamp(0.67em,3vw,0.8175em);
+        flex: 1 0 auto
     }
 
 
@@ -658,12 +667,14 @@ footer{
 
     .hebergements-and-populaires{
         flex-direction: column-reverse;
-        margin: -3.11em;
-        }
+        margin: -3.12em;
+            }
 
     .hebergements-and-populaires section{
         border-radius: 0; 
         }
+
+  
 
     .populaires{
         padding: 1.88em 1.25em;
@@ -710,8 +721,8 @@ footer{
     }
 
     .activity {
-        margin: -3.11em;
         padding-bottom: 4.17em;
+        margin: -3.12em;
     }
 
     .activity-cards{
@@ -722,11 +733,12 @@ footer{
 
     footer{
         flex-direction: column ;
-        margin: -3.11em;
+        margin: 0;
         width: 200%;
         height: auto;
     }
     .a-propos{
         padding-bottom: 0;
     }
+
 }   
