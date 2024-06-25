@@ -531,6 +531,7 @@ footer {
 @media (min-width: 320px) and (max-width: 767.98px) {
   .main-container {
     margin: 0;
+    padding: 0 1em;
   }
 
   header {
