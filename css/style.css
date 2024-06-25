@@ -665,21 +665,18 @@ footer {
     align-self: stretch;
   }
 
+  .card-content {
+    gap: 70px;
+  }
+
   .populaires-cards img {
     height: 100%;
     width: 32%;
   }
 
   .populaires .card-txt {
-    position: absolute;
-    top: 0.3em;
     white-space: normal;
     word-wrap: break-word;
-  }
-
-  .populaires .card-rating {
-    position: absolute;
-    bottom: 0.3em;
   }
 
   .hebergements {
